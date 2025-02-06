@@ -5,7 +5,7 @@ import { Flex } from '@radix-ui/themes'
 
 export default function Home() {
   return (
-    <Flex direction={'column'}>
+    <Flex direction={'column'} className='overflow-x-hidden'>
       <AdVideoBlock />
       <ServicesBlock />
     </Flex>
