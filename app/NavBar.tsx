@@ -6,10 +6,10 @@ import Link from 'next/link'
 
 const NavBar = () => {
     return (
-        <Flex p={'20px'} justify={'between'} align={'center'}>
-            <Image src={siloxLogo} alt='logo' width={150} height={100} />
+        <Flex p={'10px 30px'} justify={'between'} align={'center'}>
+            <Image src={siloxLogo} alt='logo' width={100} height={100} />
             <Flex gap={'40px'} align={'center'}>
-                <Link href={'/'}>Services</Link>
+                <Link href={'/'} className='hover:text-blue-300 '>Services</Link>
                 <Link href={'/'}>Contact</Link>
                 <Button size={'3'}>Book a call</Button>
             </Flex>

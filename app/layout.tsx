@@ -20,7 +20,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Theme accentColor="iris" radius="large">
+        <Theme
+          accentColor="iris"
+          radius="large"
+        // style={{ color: "white" }}
+        // appearance="dark"
+
+        >
           <NavBar />
           {children}
           {/* <ThemePanel /> */}

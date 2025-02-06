@@ -1,9 +1,13 @@
 import Image from 'next/image'
+import AdVideoBlock from './components/AdVideoBlock'
+import ServicesBlock from './components/ServicesBlock'
+import { Flex } from '@radix-ui/themes'
 
 export default function Home() {
   return (
-    <main>
-      Hello World
-    </main>
+    <Flex direction={'column'}>
+      <AdVideoBlock />
+      <ServicesBlock />
+    </Flex>
   )
 }
