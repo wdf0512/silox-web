@@ -23,7 +23,7 @@ const DatePicker: React.FC = () => {
             </h2>
 
             <Calendar
-                onChange={setDate}
+                onChange={setDate as any}
                 value={date}
                 className={styles.calendar}
             />
