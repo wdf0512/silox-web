@@ -13,6 +13,7 @@ const ServicesBlock = () => {
             direction={'column'}
             align={'center'}
             pt={'2rem'}
+            pb={'2rem'}
             gap={'6'}
             style={{
                 backgroundImage: `url(${purpleBlueBg.src})`,
