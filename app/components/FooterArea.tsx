@@ -11,25 +11,30 @@ import YoutubeLogo from '@/public/images/YoutubeLogo.png';
 
 const FooterArea = () => {
     return (
-        <Box
+        <Flex
             style={{
                 backgroundImage: `url(${FooterBg.src})`,
                 height: '598px',
                 width: '100%',
-                backgroundSize: 'auto ',
+                backgroundSize: 'cover',
                 backgroundPosition: 'center',
-                display: 'flex',
-                justifyContent: 'space-between',
-                alignItems: 'center',
+                // justifyContent: 'space-between',
+                // alignItems: 'center',
                 backgroundRepeat: 'no-repeat',
             }}
             px={'138px'}
-            className="flex-col md:flex-row items-center text-center md:text-left md: pb-10"
+            direction={{
+                md: 'row',
+                xl: 'column'
+            }}
+            justify={'between'}
+            align={'center'}
+            className="md:flex-row items-center text-center md:text-left md: pb-10"
         >
             <Flex
                 gap={'8'}
                 direction={'column'}
-                className="w-full md:w-auto items-center md:items-start"
+                className="w-full md:w-auto items-center md:items-start xl:items-center"
             >
                 <Image src={WhiteLogo} alt="WhiteLogo" width={200} height={200} />
                 <Text className="text-white text-sm md:text-base">Headquartered in Sydney, Australia</Text>
@@ -43,7 +48,7 @@ const FooterArea = () => {
                 <Image className="hover:cursor-pointer w-[50px] md:w-[100px]" src={LinkedInLogo} alt="LinkedInLogo" width={100} height={100} />
                 <Image className="hover:cursor-pointer w-[50px] md:w-[100px]" src={YoutubeLogo} alt="YoutubeLogo" width={100} height={100} />
             </Flex>
-        </Box>
+        </Flex>
     );
 };
 

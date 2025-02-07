@@ -11,6 +11,9 @@ const ScheduleBlock = () => {
             width={'100%'} height={'902px'}
             style={{
                 backgroundImage: `url(${ScheduleBg.src})`,
+                backgroundRepeat: 'no-repeat',
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
             }}
         >
             <Flex justify={'center'} align={'center'} width={'100%'} height={'100%'}>

@@ -25,11 +25,6 @@ const ServicesBlock: React.FC = () => {
             pt={'2rem'}
             pb={'2rem'}
             gap={'6'}
-            style={{
-                backgroundImage: `url(${purpleBlueBg.src})`,
-                backgroundSize: 'contain',
-                backgroundPosition: 'start',
-            }}
         >
             {/* 添加动画到标题 */}
             <motion.div
@@ -41,7 +36,7 @@ const ServicesBlock: React.FC = () => {
                 <Heading size={'8'}>Services</Heading>
             </motion.div>
 
-            <Grid columns={{ xs: '1', md: '2' }} gap='8' justify={'center'} align={'start'} px={'9'}>
+            <Grid columns={{ xs: '1', md: '2', lg: '4' }} gap='8' justify={'center'} align={'start'} px={'9'}>
                 {eachCardInfo.map((service, index) => (
                     <motion.div
                         key={index}

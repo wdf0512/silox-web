@@ -6,7 +6,7 @@ import ServicesDropdown from './components/ServicesDropdown'
 
 const NavBar = () => {
     return (
-        <Flex p="10px 30px" justify="between" align="center" className="relative">
+        <Flex p="10px 30px" justify="between" align="center">
             <Image src={siloxLogo} alt="logo" width={100} height={100} />
 
             <Flex gap="40px" align="center">

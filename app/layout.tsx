@@ -4,6 +4,8 @@ import './globals.css'
 import "@radix-ui/themes/styles.css";
 import { Theme, ThemePanel } from '@radix-ui/themes';
 import NavBar from './NavBar';
+import purpleBlueBg from '@/public/images/purpleBlueBg.png';
+
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,13 +21,20 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={inter.className} >
         <Theme
           accentColor="iris"
           radius="large"
-        // style={{ color: "white" }}
-        // appearance="dark"
-
+          // style={{ color: "white" }}
+          // appearance="dark"
+          style={{
+            backgroundImage: `url(${purpleBlueBg.src})`,
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "center",
+            height: "100vh",
+            width: "100vw",
+          }}
         >
           <NavBar />
           {children}
