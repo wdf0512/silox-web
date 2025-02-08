@@ -29,11 +29,12 @@ export default function RootLayout({
           // appearance="dark"
           style={{
             backgroundImage: `url(${purpleBlueBg.src})`,
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",
+            backgroundSize: "contain",
+            backgroundRepeat: "repeat",
             backgroundPosition: "center",
-            height: "100vh",
+            height: "auto",
             width: "100vw",
+            paddingBottom: '20px'
           }}
         >
           <NavBar />

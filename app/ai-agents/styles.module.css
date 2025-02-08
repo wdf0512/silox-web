@@ -1,5 +1,5 @@
 .animated-gradient-text {
-  font-size: 3rem; /* 文字大小 */
+  font-size: 6rem; /* 文字大小 */
   font-weight: bold;
   text-align: center;
   background-image: linear-gradient(90deg, #ff8a00, #e52e71, #6a0dad, #ff8a00);
@@ -7,6 +7,18 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: gradientAnimation 4s infinite linear;
+}
+
+@media screen and (max-width: 768px) {
+  .animated-gradient-text {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .animated-gradient-text {
+    font-size: 3rem;
+  }
 }
 
 @keyframes gradientAnimation {

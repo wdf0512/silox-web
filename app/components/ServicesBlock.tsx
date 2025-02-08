@@ -1,14 +1,13 @@
 'use client'
 
-import { Flex, Grid, Heading } from '@radix-ui/themes';
-import { motion } from 'motion/react';
-import React from 'react';
-import ServicesCard from './ServicesCard';
 import AiAgent from '@/public/images/AiAgent.png';
 import MicrosoftPilot from '@/public/images/MicrosoftCopilot.png';
 import PowerPlatform from '@/public/images/PowerPlatform.png';
 import WebDevelopment from '@/public/images/WebDevelopment.png';
-import purpleBlueBg from '@/public/images/purpleBlueBg.png';
+import { Flex, Grid, Heading } from '@radix-ui/themes';
+import { motion } from 'motion/react';
+import React from 'react';
+import ServicesCard from './ServicesCard';
 
 const eachCardInfo = [
     { title: 'AI Agents & Automation', image: AiAgent, description: 'At SiloX, we empower businesses to streamline operations and scale—without increasing headcount. No AI expertise required—we take care of everything. Stay ahead of the competition, enhance efficiency, and let automation fuel your success.' },
