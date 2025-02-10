@@ -34,7 +34,7 @@ export default function RootLayout({
             backgroundPosition: "center",
             height: "auto",
             width: "100vw",
-            paddingBottom: '20px'
+            // paddingBottom: '20px'
           }}
         >
           <NavBar />
