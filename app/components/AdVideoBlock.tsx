@@ -1,32 +1,24 @@
+'use client'
+
 import React from 'react'
+import { motion } from 'framer-motion'
 
 const AdVideoBlock = () => {
     return (
-        <div
-            style={{
-                position: 'relative',
-                top: '0px',
-                left: '0px',
-                width: '100vw',
-                height: '60vh',
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
-                zIndex: -1,
-            }}
+        <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1, ease: 'easeOut' }}
+            className="relative w-screen h-[60vh] flex justify-center items-center"
         >
             <video
                 src="/images/Homepage1.mp4"
                 loop
                 autoPlay
                 muted
-                style={{
-                    width: '100%',
-                    height: '100%',
-                    objectFit: 'contain',
-                }}
+                className="w-full h-full contain"
             />
-        </div>
+        </motion.div>
     )
 }
 

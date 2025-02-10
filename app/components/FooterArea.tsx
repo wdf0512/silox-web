@@ -14,7 +14,7 @@ const FooterArea = () => {
         <Flex
             style={{
                 backgroundImage: `url(${FooterBg.src})`,
-                height: '598px',
+                height: '498px',
                 width: '100%',
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
@@ -24,17 +24,23 @@ const FooterArea = () => {
             }}
             px={'138px'}
             direction={{
-                md: 'row',
-                xl: 'column'
+                initial: 'column',
+                xl: 'row'
             }}
-            justify={'between'}
+            justify={{
+                initial: 'center',
+                md: 'between'
+            }}
             align={'center'}
-            className="md:flex-row items-center text-center md:text-left md: pb-10"
+            className="items-center text-center md:text-left md: pb-10"
         >
             <Flex
-                gap={'8'}
+                gap={{
+                    initial: '1',
+                    md: '8'
+                }}
                 direction={'column'}
-                className="w-full md:w-auto items-center md:items-start xl:items-center"
+                className="w-full md:w-auto items-center md:items-center"
             >
                 <Image src={WhiteLogo} alt="WhiteLogo" width={200} height={200} />
                 <Text className="text-white text-sm md:text-base">Headquartered in Sydney, Australia</Text>
