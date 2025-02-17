@@ -5,6 +5,7 @@ import "@radix-ui/themes/styles.css";
 import { Theme, ThemePanel } from '@radix-ui/themes';
 import NavBar from './NavBar';
 import purpleBlueBg from '@/public/images/purpleBlueBg.png';
+import AnimatedBackground from './components/AnimatedBackground';
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -25,18 +26,8 @@ export default function RootLayout({
         <Theme
           accentColor="iris"
           radius="large"
-          // style={{ color: "white" }}
-          // appearance="dark"
-          style={{
-            backgroundImage: `url(${purpleBlueBg.src})`,
-            backgroundSize: "contain",
-            backgroundRepeat: "repeat",
-            backgroundPosition: "center",
-            height: "auto",
-            width: "100vw",
-            // paddingBottom: '20px'
-          }}
         >
+          <AnimatedBackground />
           <NavBar />
           {children}
           {/* <ThemePanel /> */}

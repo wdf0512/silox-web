@@ -7,7 +7,10 @@ import ImageHeadingComb from './ImageHeadingComb'
 
 const N8nUseCaseBlock = () => {
     return (
-        <Grid columns={'2'} gap={'8'} p={'8'}>
+        <Grid columns={{
+            initial: '1',
+            md: '2'
+        }} gap={'8'} p={'8'}>
             <ImageHeadingComb imageSrc={ITOpsImage} alt="ITOps Use Case" title='IT Ops' />
             <ImageHeadingComb imageSrc={DevOpsImage} alt="DevOps Use Case" title='DevOps' />
             <ImageHeadingComb imageSrc={SecOpsImage} alt="SecOps Use Case" title='SecOps' />

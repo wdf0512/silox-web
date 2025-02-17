@@ -14,7 +14,7 @@ const FooterArea = () => {
         <Flex
             style={{
                 backgroundImage: `url(${FooterBg.src})`,
-                height: '598px',
+                height: '398px',
                 width: '100%',
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
@@ -24,15 +24,18 @@ const FooterArea = () => {
             }}
             px={'138px'}
             direction={{
-                md: 'row',
-                xl: 'column'
+                initial: 'column',
+                md: 'row'
             }}
             justify={'between'}
             align={'center'}
-            className="md:flex-row items-center text-center md:text-left md: pb-10"
+            className="md:flex-row items-center text-center md:text-left md: pb-10 between"
         >
             <Flex
-                gap={'8'}
+                gap={{
+                    initial: '1',
+                    md: '8'
+                }}
                 direction={'column'}
                 className="w-full md:w-auto items-center md:items-start xl:items-center"
             >
