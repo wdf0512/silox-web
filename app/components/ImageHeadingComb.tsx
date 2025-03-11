@@ -1,3 +1,5 @@
+'use client'
+
 import { Flex, Heading } from '@radix-ui/themes'
 import Image, { StaticImageData } from 'next/image'
 import { motion } from 'motion/react'

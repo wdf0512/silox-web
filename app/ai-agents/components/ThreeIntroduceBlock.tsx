@@ -1,6 +1,5 @@
-import React from 'react'
-import IntroduceCard from './IntroduceCard'
-import { Flex, Separator } from '@radix-ui/themes'
+import { Flex } from '@radix-ui/themes'
+import IntroduceCard from '../../components/IntroduceCard'
 
 const ThreeIntroduceBlock = () => {
     return (

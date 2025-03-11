@@ -3,7 +3,7 @@ import ITOpsImage from '@/public/images/itops_usecase_2x_1fbf6e467c.png'
 import SalesImage from '@/public/images/sales_usecase_2x_bc60f04f89.png'
 import SecOpsImage from '@/public/images/secops_usecase_2x_a2268c3be2.png'
 import { Grid } from '@radix-ui/themes'
-import ImageHeadingComb from './ImageHeadingComb'
+import ImageHeadingComb from '../../components/ImageHeadingComb'
 
 const N8nUseCaseBlock = () => {
     return (

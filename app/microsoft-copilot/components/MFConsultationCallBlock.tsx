@@ -31,7 +31,7 @@ const FloatingSphere = ({ isInView }) => {
     );
 };
 
-const AIAgentBookConsultationBlock = () => {
+const MFConsultationCallBlock = () => {
     const ref = useRef(null);
     const isInView = useInView(ref, { once: false }); // 检测是否在视口内，once: false 允许多次触发
 
@@ -97,12 +97,10 @@ const AIAgentBookConsultationBlock = () => {
                         WebkitTextFillColor: 'transparent',
                     }}
                 >
-                    Harness the Power of AI Automation
+                    Microsoft 365 Copilot
                 </Heading>
                 <Text className="max-w-[130ch]" style={{ color: '#4a4948' }}>
-                    Take your business to the next level with AI-driven automation. Whether you need expert
-                    consulting, a vibrant community of innovators, or step-by-step tutorials, we provide
-                    everything to help you thrive in the AI era. Join us—let’s shape the future together.
+                    Stay focused while Copilot handles writing, editing, and summarization, freeing up time for what truly matters. Unlock new levels of creativity and efficiency across your favorite Microsoft 365 apps.
                 </Text>
                 <Button size={'3'}>
                     Book A Consultation Call
@@ -112,4 +110,4 @@ const AIAgentBookConsultationBlock = () => {
     );
 };
 
-export default AIAgentBookConsultationBlock;
+export default MFConsultationCallBlock;
