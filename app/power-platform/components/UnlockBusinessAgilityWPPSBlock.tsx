@@ -1,37 +1,12 @@
 'use client'
 
-import React, { useRef } from 'react';
+import { FloatingSphere } from '@/app/microsoft-copilot/components/MFConsultationCallBlock';
+import { Button, Flex, Heading, Text } from '@radix-ui/themes'
 import { Canvas } from '@react-three/fiber';
-import { MeshDistortMaterial, Sphere } from '@react-three/drei';
-import { a, useSpring } from '@react-spring/three';
-import { motion, useInView } from 'motion/react';
-import { Button, Flex, Heading, Text } from '@radix-ui/themes';
+import { useInView, motion } from 'motion/react';
+import React, { useRef } from 'react'
 
-export const FloatingSphere = ({ isInView }) => {
-    const { scale } = useSpring({
-        scale: isInView ? 1.2 : 1, // 仅在视口内缩放
-        loop: isInView ? { reverse: true } : false, // 仅在视口内循环
-        config: { duration: 2000 },
-        immediate: !isInView, // 离开视口时立即停止动画
-    });
-
-    return (
-        <a.mesh scale={scale}>
-            <Sphere args={[1, 32, 32]}>
-                <MeshDistortMaterial
-                    color="#00a8ff"
-                    attach="material"
-                    distort={0.5}
-                    speed={2}
-                    transparent
-                    opacity={0.8}
-                />
-            </Sphere>
-        </a.mesh>
-    );
-};
-
-const MFConsultationCallBlock = () => {
+const UnlockBusinessAgilityWPPSBlock = () => {
     const ref = useRef(null);
     const isInView = useInView(ref, { once: false }); // 检测是否在视口内，once: false 允许多次触发
 
@@ -97,17 +72,17 @@ const MFConsultationCallBlock = () => {
                         WebkitTextFillColor: 'transparent',
                     }}
                 >
-                    Microsoft 365 Copilot
+                    Unlock Business Agility with Power Platform Solutions
                 </Heading>
-                <Text className="max-w-[130ch]" style={{ color: '#4a4948' }}>
-                    Stay focused while Copilot handles writing, editing, and summarization, freeing up time for what truly matters. Unlock new levels of creativity and efficiency across your favorite Microsoft 365 apps.
+                <Text className="max-w-[100ch]" style={{ color: '#4a4948' }} size={'6'}>
+                    Leverage the Microsoft Power Platform to drive innovation, optimize processes, and empower your team. With Silo&apos;X  s expert development services, we help you unlock new possibilities for growth and efficiency. Connect with us today to explore the potential.
                 </Text>
                 <Button size={'3'}>
                     Book A Consultation Call
                 </Button>
             </Flex>
         </motion.div>
-    );
-};
+    )
+}
 
-export default MFConsultationCallBlock;
+export default UnlockBusinessAgilityWPPSBlock

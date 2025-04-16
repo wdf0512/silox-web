@@ -9,16 +9,13 @@ import YourAIPoweredAssistantAcrossMF365Block from './components/YourAIPoweredAs
 import FooterArea from '../components/FooterArea'
 const MicrosoftCopilotPage = () => {
     return (
-        <Flex direction={'column'}>
-            <Flex gap={'9'} direction={'column'} align={'center'} className='overflow-hidden w-[80vw] mx-auto'>
-                <MFHeadingBlock />
-                <MFIntroduceBlock />
-                <MFYourAIAssistantForWorkBlock />
-                <MFConsultationCallBlock />
-                <YourAIPoweredAssistantAcrossMF365Block />
-            </Flex>
-            <FooterArea />
-        </Flex>
+        <>
+            <MFHeadingBlock />
+            <MFIntroduceBlock />
+            <MFYourAIAssistantForWorkBlock />
+            <MFConsultationCallBlock />
+            <YourAIPoweredAssistantAcrossMF365Block />
+        </>
     )
 }
 

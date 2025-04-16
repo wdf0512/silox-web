@@ -4,15 +4,15 @@ import { Flex, Heading, Text, Button } from '@radix-ui/themes'
 import Image from 'next/image'
 import { motion } from 'motion/react'
 import React from 'react'
-import micro365 from '@/public/images/microsoft-365-1.jpg'
+import powerPlatform from '@/public/images/power platform-service.png'
 
-const MFIntroduceBlock = () => {
+const CustomizedSolutionsBlock = () => {
     return (
         <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0, scale: 1.1 }}
             transition={{ duration: 1.4, ease: 'easeOut' }}
-            className="relative bg-gradient-to-br from-white via-gray-50 to-purple-50 overflow-hidden rounded-xl"
+            className="relative bg-gradient-to-br from-white via-pink-100 to-pink-300 overflow-hidden rounded-2xl"
         >
             <Flex
                 direction={{ initial: 'column', md: 'row' }} // 响应式布局：小屏幕纵向，大屏幕横向
@@ -39,7 +39,7 @@ const MFIntroduceBlock = () => {
                             weight="bold"
                             className="text-center md:text-left bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"
                         >
-                            Integrate AI, Copilot, and Next-Level Productivity into Your Business
+                            Customized Solutions for Your Business Needs
                         </Heading>
                     </motion.div>
 
@@ -55,11 +55,7 @@ const MFIntroduceBlock = () => {
                             className="text-center md:text-left text-gray-600 leading-relaxed"
                             style={{ maxWidth: '60ch' }}
                         >
-                            Microsoft’s AI assistant, Copilot, is transforming Microsoft 365 by boosting productivity,
-                            creativity, and collaboration. However, unlocking AI’s full potential requires more than
-                            just technology—it demands a shift in workplace mindset and culture. With the right
-                            change management strategies and AI training, your team can seamlessly adapt and thrive
-                            in the AI-powered future.
+                            SiloX is proud to hold the Power Platform Solution Architect Certification and offer premier consulting services specializing in the Power Platform. This suite of solutions empowers you to build intelligent, scalable, and automated applications with little to no code. With Power BI, Power Apps, Power Automate, and Power Virtual Agents, we help you streamline processes, boost productivity, and make more informed decisions across your organization.
                         </Text>
                     </motion.div>
 
@@ -99,12 +95,12 @@ const MFIntroduceBlock = () => {
                             className="relative overflow-hidden rounded-xl shadow-xl hover:shadow-2xl"
                         >
                             <Image
-                                src={micro365}
+                                src={powerPlatform}
                                 alt="Microsoft 365"
                                 // width={600} // 固定宽度，保持比例
                                 // height={400} // 固定高度，保持比例
                                 sizes="(max-width: 768px) 100vw, 50vw"
-                                className="object-cover transition-all duration-300"
+                                className="object-contain transition-all duration-300 min-h-[600px]"
                             />
                             {/* 动态图标装饰（参考图片中的效果） */}
                             <motion.div
@@ -118,10 +114,10 @@ const MFIntroduceBlock = () => {
                                     ease: 'linear',
                                 }}
                             >
-                                {['W', 'P', 'A', 'X', 'T', 'O'].map((icon, index) => (
+                                {['P', 'O', 'W', 'E', 'R', 'P', 'L', 'A', 'T', 'F', 'O', 'R', 'M'].map((icon, index) => (
                                     <motion.div
                                         key={index}
-                                        className="absolute text-4xl font-bold text-white opacity-70"
+                                        className="absolute text-4xl font-bold text-blue-900 opacity-70"
                                         style={{
                                             left: `${Math.random() * 100}%`,
                                             top: `${Math.random() * 100}%`,
@@ -148,4 +144,4 @@ const MFIntroduceBlock = () => {
     );
 };
 
-export default MFIntroduceBlock;
+export default CustomizedSolutionsBlock;

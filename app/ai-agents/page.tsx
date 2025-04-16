@@ -9,16 +9,13 @@ import FooterArea from '../components/FooterArea'
 
 const AiAgentPage = () => {
     return (
-        <Flex direction={'column'}>
-            <Flex gap={'9'} direction={'column'} align={'center'} className='overflow-hidden w-[80vw] mx-auto'>
-                <AIAgentsLargeTitle />
-                <EmpoweringBusinessBlock />
-                <UnlockThePowerOfAIAutomationBlock />
-                <AIAgentBookConsultationBlock />
-                <N8nUseCaseBlock />
-            </Flex>
-            <FooterArea />
-        </Flex>
+        <>
+            <AIAgentsLargeTitle />
+            <EmpoweringBusinessBlock />
+            <UnlockThePowerOfAIAutomationBlock />
+            <AIAgentBookConsultationBlock />
+            <N8nUseCaseBlock />
+        </>
     )
 }
 
