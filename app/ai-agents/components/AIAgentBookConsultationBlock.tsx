@@ -7,7 +7,7 @@ import { a, useSpring } from '@react-spring/three';
 import { motion, useInView } from 'motion/react';
 import { Button, Flex, Heading, Text } from '@radix-ui/themes';
 
-const FloatingSphere = ({ isInView }) => {
+const FloatingSphere = ({ isInView }: { isInView: boolean }) => {
     const { scale } = useSpring({
         scale: isInView ? 1.2 : 1, // 仅在视口内缩放
         loop: isInView ? { reverse: true } : false, // 仅在视口内循环
