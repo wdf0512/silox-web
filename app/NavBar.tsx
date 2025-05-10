@@ -21,7 +21,7 @@ const NavBar = () => {
             <Flex gap="40px" align="center">
                 <ServicesDropdown />
 
-                <Link href="/" className="hover:text-blue-500 transition-all duration-300 font-medium">
+                <Link href="/contract" className="hover:text-blue-500 transition-all duration-300 font-medium">
                     Contact
                 </Link>
                 <Button size="3" className="bg-blue-500 hover:bg-blue-600 transition-colors duration-300">

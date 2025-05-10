@@ -10,7 +10,7 @@ const BookConsultationBlock = () => {
     };
 
     return (
-        <Box className="w-full">
+        <Box>
             <div className="relative w-screen h-[60vh]">
                 <video
                     src="/images/Homepage2.mp4"
