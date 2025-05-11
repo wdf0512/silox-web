@@ -1,8 +1,13 @@
 import React from 'react'
+import ContractTitle from './components/ContractTitle'
+import FormBlock from './components/FormBlock'
 
 const ContractPage = () => {
     return (
-        <div>ContractPage</div>
+        <>
+            <ContractTitle />
+            <FormBlock />
+        </>
     )
 }
 
